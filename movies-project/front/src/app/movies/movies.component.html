@@ -37,6 +37,6 @@
 <br>
 <br>
 
-<div style="margin-left: 10%;">
+<div style="margin-left: 10%;"  [@listAnimation]="movies.length">
   <app-movie *ngFor="let movie of movies" [movie]="movie" (deleteMovie)="onDeleteMovie($event)"></app-movie>
 </div>
